@@ -1,21 +1,15 @@
 class VrcGet < Formula
   desc "Command-line VPM Client"
   homepage "https://github.com/anatawa12/vrc-get"
-  url "https://github.com/anatawa12/vrc-get/archive/v1.3.1.tar.gz"
-  sha256 "3d91db43d528f52defc223f1f20bba9d680108166d562eacc564f8a3d686fa4f"
+  url "https://github.com/anatawa12/vrc-get.git",
+      tag:      "v1.3.2",
+      revision: "df1ac90bfcf625a6b3ae85f8acc76f9a500ee049"
   license "MIT"
-
-  head "https://github.com/anatawa12/vrc-get.git", branch: "master"
-
-  livecheck do
-    url :stable
-    strategy :github_latest
-  end
 
   depends_on "rust" => :build
 
   def install
-    system "cargo", "install", "--root", prefix, "--path", "."
+    system "cargo", "install", *std_cargo_args
   end
 
   test do
