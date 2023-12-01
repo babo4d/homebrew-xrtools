@@ -8,6 +8,11 @@ cask "upbge" do
   desc "Uchronia Project Blender Game Engine"
   homepage "https://upbge.org/"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   # Rename to avoid conflict with blender
   app "Blender.app", target: "UPBGE.app"
 
