@@ -1,6 +1,6 @@
 cask "tiny-vcc" do
-  version "0.6.0"
-  sha256 "d6e45f7e26ed9646aef510153a26bdd79cdf0c88020d82420e1f7aebb8ad1772"
+  version "0.6.1"
+  sha256 "e76c803204b5a4f97c24e66bb7cb033ecafdd612874b783fe5171ce6a5e35b43"
 
   url "https://github.com/kurotu/tiny_vcc/releases/download/v#{version}/TinyVCC-v#{version}.dmg"
   name "Tiny VCC"
