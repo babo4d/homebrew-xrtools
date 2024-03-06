@@ -2,8 +2,8 @@ class VrcGet < Formula
   desc "Command-line VPM Client"
   homepage "https://github.com/anatawa12/vrc-get"
   url "https://github.com/anatawa12/vrc-get.git",
-      tag:      "v1.5.3",
-      revision: "3e1e2ac6274232882de2a07bbf4f27e9d9b8c0ab"
+      tag:      "v1.7.1",
+      revision: "725149c8a4fcfd14b93cc5930a9abf15c8910131"
   license "MIT"
 
   depends_on "rust" => :build
