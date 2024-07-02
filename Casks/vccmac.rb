@@ -10,6 +10,7 @@ cask "vccmac" do
   app "VCCMac.app"
 
   zap trash: [
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.yuki.vccmac.sfl*",
     "~/Library/Application Support/com.yuki.VCCMac",
     "~/Library/Logs/com.yuki.VCCMac",
     "~/Library/Preferences/com.yuki.VCCMac.plist",
