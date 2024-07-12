@@ -8,19 +8,6 @@ cask "pcsx2" do
   desc "PS2 emulator"
   homepage "https://pcsx2.net/"
 
-  # livecheck do
-  #   url :url
-  #   regex(/pcsx2[._-]v?(\d+(?:\.\d+)+)[._-]macos[._-]Qt\.tar\.xz/i)
-  #   strategy :github_latest do |json, regex|
-  #     json["assets"]&.map do |asset|
-  #       match = asset["name"]&.match(regex)
-  #       next if match.blank?
-
-  #       "#{match[1]},#{match[2]}"
-  #     end
-  #   end
-  # end
-
   app "PCSX2-v#{version}.app", target: "PCSX2.app"
 
   zap trash: [
