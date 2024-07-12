@@ -8,6 +8,11 @@ cask "attract" do
   desc "Graphical front-end for command-line emulators"
   homepage "https://attractmode.org/"
 
+  livecheck do
+    url "https://attractmode.org/download.html"
+    regex(%r{href=.*?/attract[._-]v?(\d+(?:\.\d+)+)\.dmg}i)
+  end
+
   app "Attract.app"
 
   zap trash: [
