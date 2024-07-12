@@ -8,6 +8,11 @@ cask "ludo" do
   desc "Minimalist frontend for emulators"
   homepage "https://ludo.libretro.com/"
 
+  livecheck do
+    url :homepage
+    regex(%r{href=.*?/Ludo[._-]OSX[._-]x86_64[._-]v?(\d+(?:\.\d+)+)\.dmg}i)
+  end
+
   app "Ludo.app"
 
   zap trash: "~/Library/Application Support/ludo"
