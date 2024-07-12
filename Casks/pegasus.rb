@@ -8,6 +8,16 @@ cask "pegasus" do
   desc "Graphical frontend for launching emulators and managing your game collection"
   homepage "https://pegasus-frontend.org/"
 
+  livecheck do
+    url "https://api.github.com/repos/mmatyas/pegasus-frontend/releases/latest"
+    regex(%r{.*/releases/download/(.+)/pegasus-fe_([\w\d-]+)_macos-static.zip}i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map do |match|
+        "#{match[1]},#{match[0]}"
+      end
+    end
+  end
+
   app "Pegasus.app"
 
   zap trash: [
