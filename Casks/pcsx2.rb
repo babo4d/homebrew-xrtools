@@ -8,6 +8,11 @@ cask "pcsx2" do
   desc "PS2 emulator"
   homepage "https://pcsx2.net/"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   app "PCSX2-v#{version}.app", target: "PCSX2.app"
 
   zap trash: [
