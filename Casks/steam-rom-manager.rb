@@ -1,6 +1,6 @@
 cask "steam-rom-manager" do
-  version "2.5.17"
-  sha256 "3e596ff6b3faaab8007df4daf8a435a746ab0d4bd434868a15bfe3f2affbae11"
+  version "2.5.21"
+  sha256 "6e10584e73bb4296cd49972e5bfc18df946fcf55a7f828ffc444536e14952e62"
 
   url "https://github.com/SteamGridDB/steam-rom-manager/releases/download/v#{version}/Steam-ROM-Manager-#{version}.dmg",
       verified: "github.com/SteamGridDB/steam-rom-manager/"
