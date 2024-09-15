@@ -1,8 +1,8 @@
 cask "openra-shattered-paradise" do
-  version "playtest-20240526"
+  version "20240526,playtest"
   sha256 "301146073748fa4652a4e3d80ef6f1d54e74e61150b65b5adb57781c531dc520"
 
-  url "https://github.com/ABrandau/Shattered-Paradise-SDK/releases/download/#{version}/ShatteredParadise-#{version}.dmg",
+  url "https://github.com/ABrandau/Shattered-Paradise-SDK/releases/download/#{version.csv.second}-#{version.csv.first}/ShatteredParadise-#{version.csv.second}-#{version.csv.first}.dmg",
       verified: "github.com/ABrandau/Shattered-Paradise-SDK/"
   name "OpenRA - Shattered Paradise"
   desc "Expansion for Tiberian Sun on OpenRA"
@@ -10,8 +10,10 @@ cask "openra-shattered-paradise" do
 
   livecheck do
     url :url
-    strategy :github_latest
-    regex(/^(\w+(?:[.-]v?\d+)*)$/i)
+    regex(/^(\w+)-(\d+)$/i)
+    strategy :github_latest do |json, regex|
+      json["tag_name"]&.scan(regex)&.map { |match| "#{match[1]},#{match[0]}" }
+    end
   end
 
   app "OpenRA - Shattered Paradise.app"

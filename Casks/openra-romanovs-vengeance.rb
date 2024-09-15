@@ -1,8 +1,8 @@
 cask "openra-romanovs-vengeance" do
-  version "playtest-20240218"
+  version "20240218,playtest"
   sha256 "d5bcea44634bb8335550c3cc1ff6566b54ac7b0699b5895c5dfd3e5bb9cf2025"
 
-  url "https://github.com/MustaphaTR/Romanovs-Vengeance/releases/download/#{version}/Romanovs.Vengeance-#{version}.dmg",
+  url "https://github.com/MustaphaTR/Romanovs-Vengeance/releases/download/#{version.csv.second}-#{version.csv.first}/Romanovs.Vengeance-#{version.csv.second}-#{version.csv.first}.dmg",
       verified: "github.com/MustaphaTR/Romanovs-Vengeance/"
   name "OpenRA - Romanov's Vengeance"
   desc "OpenRA mod based on Command & Conquer: Red Alert 2"
@@ -10,8 +10,10 @@ cask "openra-romanovs-vengeance" do
 
   livecheck do
     url :url
-    strategy :github_latest
-    regex(/^(\w+(?:[.-]v?\d+)*)$/i)
+    regex(/^(\w+)-(\d+)$/i)
+    strategy :github_latest do |json, regex|
+      json["tag_name"]&.scan(regex)&.map { |match| "#{match[1]},#{match[0]}" }
+    end
   end
 
   app "OpenRA - Romanovs Vengeance.app"
