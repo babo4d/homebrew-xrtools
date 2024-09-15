@@ -1,9 +1,9 @@
 cask "es-de" do
-  arch arm: "132900941", intel: "132900999"
+  arch arm: "147580748", intel: "147580830"
 
-  version "3.0.3"
-  sha256 arm:   "f410a8e1474d93cbebb0cddb29e7e3a503d4689a7995ed6dc55f74e2dbc30876",
-         intel: "fa6d2c108c50763a041467413c4865cb6bfe9c5e0fcd1902aa9b0fb59cfb6cbd"
+  version "3.1.0"
+  sha256 arm:   "cf73be47332aa7fc09441ccf02f9becd761c8f77357f5e5ef6dc7c6f1d7eb128",
+         intel: "3f7e687fb1d3a048c0893b92fc976da56eee5665138d4933194808f6ce09538f"
 
   url "https://gitlab.com/es-de/emulationstation-de/-/package_files/#{arch}/download",
       verified: "gitlab.com/es-de/emulationstation-de/"
