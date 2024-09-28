@@ -1,6 +1,6 @@
 cask "citra-pablomk7" do
-  version "20240821,5115f64"
-  sha256 "e648113da52b1eff5584298499eb20d26fd7de2c745c88a5261f93d51cc8bbb0"
+  version "20240927,608383e"
+  sha256 "5b5431df9f594c4f46fe636467108537aa82ccd16b0964eb49f9afa4c5ce4201"
 
   url "https://github.com/PabloMK7/citra/releases/download/r#{version.csv.second}/citra-macos-universal-#{version.csv.first}-#{version.csv.second}.7z",
       verified: "github.com/PabloMK7/citra/"
