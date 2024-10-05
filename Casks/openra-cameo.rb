@@ -1,6 +1,6 @@
 cask "openra-cameo" do
-  version "20240923,playtest"
-  sha256 "1bab4e2294df7c4490cc432bd5a7ef16d1c7faaeee1e41824c4b9269c070c1f2"
+  version "20240929,playtest"
+  sha256 "5f589ca919937b12c90f220004aa4540f4659453ecbdabb5747258abb08564be"
 
   url "https://github.com/Zeruel87/Cameo-mod/releases/download/#{version.csv.second}-#{version.csv.first}/CameoMod-#{version.csv.second}-#{version.csv.first}.dmg",
       verified: "github.com/Zeruel87/Cameo-mod/"
