@@ -1,6 +1,6 @@
 cask "pegasus" do
-  version "alpha16-51-g6421d7a7,weekly_2023w20"
-  sha256 "7ebfb354e6cd80ed259bad83b20149ac4c261d2c3f80037dd89c053424975601"
+  version "alpha16-82-gc3462e68,weekly_2024w38"
+  sha256 "87e33d23fdf92684b096530281a99eebfdf2243b47046f83381f06c62e430fcf"
 
   url "https://github.com/mmatyas/pegasus-frontend/releases/download/#{version.csv.second}/pegasus-fe_#{version.csv.first}_macos-static.zip",
       verified: "github.com/mmatyas/pegasus-frontend/"
