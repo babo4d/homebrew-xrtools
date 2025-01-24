@@ -1,6 +1,6 @@
 cask "openra-shattered-paradise" do
-  version "20240921,playtest"
-  sha256 "8904cf70c9614c633328f565b0f4710c30a2ebba106e6a3a7c66efe279b42dab"
+  version "20241231,playtest"
+  sha256 "2db25808970f49410b1f478f977b6c03786f75583a25e78820dc9be61b553ac4"
 
   url "https://github.com/ABrandau/Shattered-Paradise-SDK/releases/download/#{version.csv.second}-#{version.csv.first}/ShatteredParadise-#{version.csv.second}-#{version.csv.first}.dmg",
       verified: "github.com/ABrandau/Shattered-Paradise-SDK/"
