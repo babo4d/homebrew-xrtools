@@ -1,6 +1,6 @@
 cask "openra-romanovs-vengeance" do
-  version "20240218,playtest"
-  sha256 "d5bcea44634bb8335550c3cc1ff6566b54ac7b0699b5895c5dfd3e5bb9cf2025"
+  version "20241215,playtest"
+  sha256 "146cea4fdf7a29be3fe4f49c345cd1d90447390ce74de5ba27dd504dd2b76ae4"
 
   url "https://github.com/MustaphaTR/Romanovs-Vengeance/releases/download/#{version.csv.second}-#{version.csv.first}/Romanovs.Vengeance-#{version.csv.second}-#{version.csv.first}.dmg",
       verified: "github.com/MustaphaTR/Romanovs-Vengeance/"
