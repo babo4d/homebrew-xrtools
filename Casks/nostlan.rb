@@ -1,15 +1,14 @@
 cask "nostlan" do
-  arch arm: "arm64", intel: "x64"
+  version "2.6.x"
+  sha256 "983d35442ad13e35f842819eb9e030197320574a1e2a3586e618d9620dec5393"
 
-  version "2.5.x"
-  sha256 arm:   "32e067a8c82e5c7ee06f9dd7b50ea92b3e9ec4822376c8eb994ba30c2d87eabc",
-         intel: "47b7a4bae91dd54a04eb4f6171a1d72bb25c72a89edd66eab5c4b41f8eded152"
-
-  url "https://github.com/quinton-ashley/nostlan/releases/download/#{version}/nostlan-#{arch}-mac.7z",
+  url "https://github.com/quinton-ashley/nostlan/releases/download/#{version}/nostlan-mac.7z",
       verified: "github.com/quinton-ashley/nostlan/"
   name "Nostlan"
   desc "Game launcher for emulators"
   homepage "https://quinton-ashley.github.io/nostlan-web/"
+
+  depends_on arch: :arm64
 
   app "nostlan.app"
 
