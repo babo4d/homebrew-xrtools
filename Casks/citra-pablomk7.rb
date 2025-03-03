@@ -8,18 +8,7 @@ cask "citra-pablomk7" do
   desc "Nintendo 3DS emulator (PabloMK7 fork)"
   homepage "https://citra-emulator.com/"
 
-  livecheck do
-    url :url
-    regex(/citra-macos-universal[._-]v?(\d+)[._-](\w+)\.7z/i)
-    strategy :github_latest do |json, regex|
-      json["assets"]&.map do |asset|
-        match = asset["name"]&.match(regex)
-        next if match.blank?
-
-        "#{match[1]},#{match[2]}"
-      end
-    end
-  end
+  deprecate! date: "2024-09-29", because: :discontinued
 
   app "head/citra-qt.app"
 
