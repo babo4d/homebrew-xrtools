@@ -10,7 +10,7 @@ cask "upbge" do
 
   livecheck do
     url :url
-    strategy :github_latest
+    strategy :github_releases
   end
 
   # Rename to avoid conflict with blender
