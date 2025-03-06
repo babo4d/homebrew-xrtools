@@ -1,6 +1,6 @@
 cask "openra-tiberiandawn-hd" do
-  version "20241228,playtest"
-  sha256 "b20ca85deca91cd257b9218b9bac6e5cb84730d83253bbfb27d5ad8e75421c6c"
+  version "20250303,release"
+  sha256 "2dd3d5e5d8a31647c225469523eea94fdd997a9770f83ee2f8b231dc8c09e1ad"
 
   url "https://github.com/OpenRA/TiberianDawnHD/releases/download/#{version.csv.second}-#{version.csv.first}/TiberianDawnHD-#{version.csv.second}-#{version.csv.first}.dmg"
   name "OpenRA - Tiberian Dawn HD"
