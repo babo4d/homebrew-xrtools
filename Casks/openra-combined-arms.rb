@@ -1,6 +1,6 @@
 cask "openra-combined-arms" do
-  version "1.05.1"
-  sha256 "f263d6d5d6738cc0db9298f03ad8e92c423b71493aef34cda924e2b9c93bccba"
+  version "1.06.1"
+  sha256 "d6bcf1f9e770ae09b7dba8f3b5b021174150301fe751222dfcd06ea4ff1a02a4"
 
   url "https://github.com/Inq8/CAmod/releases/download/#{version}/CombinedArms-#{version}.dmg",
       verified: "github.com/Inq8/CAmod/"
