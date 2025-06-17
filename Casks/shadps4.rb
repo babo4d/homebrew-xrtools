@@ -1,6 +1,6 @@
 cask "shadps4" do
-  version "0.8.0"
-  sha256 "df1bec78971b2aa652c086af3b4ab072aa6623a8f40f558d64e45816064da592"
+  version "0.9.0"
+  sha256 "9a59fa5d930acc4f3bd578dbcce0b3227630e4f9f5bc470113f84a66ee5c996d"
 
   url "https://github.com/shadps4-emu/shadPS4/releases/download/v.#{version}/shadps4-macos-qt-#{version}.zip",
       verified: "github.com/shadps4-emu/"
