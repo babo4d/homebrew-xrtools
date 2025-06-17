@@ -2,9 +2,9 @@ cask "rpcs3" do
   file_suffix = on_arch_conditional arm: "macos_arm64", intel: "macos"
   folder_suffix = on_arch_conditional arm: "mac-arm64", intel: "mac"
 
-  version "0.0.36-17835,f4352259407ec11cb9432e2afac3a1df85e590e5"
-  sha256 arm:   "536b5c07d15af804ce348c1ace41d83667b0047d9434543f31910285dcb64877",
-         intel: "d1b181a9653d173a7d36d5a8206be51951f8dcf05fd42738de31da17215835e6"
+  version "0.0.37-18014,27359d3d329693c3f6bab2d480a08603511f2261"
+  sha256 arm:   "f47104e4b45299db4bd08c9ca3ccc9e6e9989c770ce9cbf2aee72d034590bd0d",
+         intel: "b4adf851032b5c532012b23eee176a96ae8d411863ea2f124a5cbae86c3cf869"
 
   url "https://github.com/RPCS3/rpcs3-binaries-#{folder_suffix}/releases/download/build-#{version.csv.second}/rpcs3-v#{version.csv.first}-#{version.csv.second[0..7]}_#{file_suffix}.7z",
       verified: "github.com/RPCS3/rpcs3-binaries-#{folder_suffix}/"
