@@ -1,6 +1,6 @@
 cask "azahar" do
-  version "2120.3"
-  sha256 "5ee6de658b2cb3d460688b16d622ed95e24d77e605464f3ed495a842291daff0"
+  version "2122"
+  sha256 "5fd63db65e915e5cdfbc00e8f0c8420907d629652bc0e3cc7f096c6d64d1b3d0"
 
   url "https://github.com/azahar-emu/azahar/releases/download/#{version}/azahar-#{version}-macos-universal.zip",
       verified: "github.com/azahar-emu/azahar/"
