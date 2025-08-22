@@ -12,6 +12,8 @@ cask "vrcx" do
     strategy :github_latest
   end
 
+  depends_on cask: "dotnet-runtime-x64"
+
   app "VRCX.app"
 
   zap trash: [
@@ -22,7 +24,7 @@ cask "vrcx" do
   caveats do
     requires_rosetta
     <<~EOS
-      Requires dotnet runtime for x64 (Intel)
+      Requires dotnet for x64 (Intel)
         https://dotnet.microsoft.com/en-us/download
     EOS
   end
