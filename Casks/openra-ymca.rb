@@ -1,6 +1,6 @@
 cask "openra-ymca" do
-  version "0.95.51"
-  sha256 "29255aebcaf44a0109bf1b0a26620c40a802a555339b45208abe07c0ff5f83aa"
+  version "0.95.62"
+  sha256 "91db7e6bd6f0317845b07ac65e9c4169ba4dad7a2e6587708b02bfebbdddd471"
 
   url "https://github.com/patrickwieth/YMCA/releases/download/v#{version}/YouMustConstructAdditional-v#{version}.dmg",
       verified: "github.com/patrickwieth/YMCA/"
