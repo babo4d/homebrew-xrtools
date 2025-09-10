@@ -23,8 +23,4 @@ cask "upbge" do
     "~/Library/Application Support/UPBGE",
     "~/Library/Saved Application State/org.upbgeteam.upbge.savedState",
   ]
-
-  caveats do
-    requires_rosetta
-  end
 end
