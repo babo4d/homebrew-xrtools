@@ -7,6 +7,8 @@ cask "tiny-vcc" do
   desc "Alternative client for VRChat Creator Companion"
   homepage "https://github.com/kurotu/tiny_vcc"
 
+  deprecate! date: "2024-03-31", because: :discontinued
+
   app "Tiny VCC.app"
 
   zap trash: [
