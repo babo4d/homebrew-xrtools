@@ -1,12 +1,14 @@
 cask "duckstation" do
-  version "0.1-9384"
-  sha256 "840d1a949a6f36988b21a16a4b26c4674cf5a1f175b469db83e1376cdf4e370d"
+  version "0.1-9669"
+  sha256 "a9b635c4aaa3600a3153911648546af10baeddb6411c7b12f27aa72d6df14fe9"
 
   url "https://github.com/stenzek/duckstation/releases/download/v#{version}/duckstation-mac-release.zip",
       verified: "github.com/stenzek/duckstation/"
   name "DuckStation"
   desc "PS1 emulator"
   homepage "https://www.duckstation.org/"
+
+  depends_on macos: ">= :big_sur"
 
   app "DuckStation.app"
 
