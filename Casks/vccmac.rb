@@ -7,6 +7,8 @@ cask "vccmac" do
   desc "Unofficial client for VRChat Creator Companion"
   homepage "https://github.com/AranoYuki1/VCC-for-mac"
 
+  depends_on macos: ">= :big_sur"
+
   app "VCCMac.app"
 
   zap trash: [
