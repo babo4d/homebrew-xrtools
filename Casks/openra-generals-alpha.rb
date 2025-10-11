@@ -1,6 +1,6 @@
 cask "openra-generals-alpha" do
-  version "20240829,gen"
-  sha256 "2e9ab3116ae8cc9a553831eb6dd78f583fde7889c94c3a964a185250e23e558f"
+  version "20250825,gen"
+  sha256 "c6334db5cd1b3e39756baf05f8d16b1e996de43820e57d035d8eeeb91d1db233"
 
   url "https://github.com/MustaphaTR/Generals-Alpha/releases/download/#{version.csv.second}-#{version.csv.first}/GeneralsAlpha-#{version.csv.second}-#{version.csv.first}.dmg",
       verified: "github.com/MustaphaTR/Generals-Alpha/"
