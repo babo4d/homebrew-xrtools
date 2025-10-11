@@ -1,11 +1,11 @@
 cask "vrcx" do
   arch arm: "arm64", intel: "x64"
 
-  version "2025.09.10"
-  sha256 arm:   "abe45069cdfff0e2cca54ea88fd23bef2f8e910ea7c14c7a82867967ca7d0851",
-         intel: "7fe7dee5c73f60feddb964b0edb456eebff0848485be1192c2244088cbd11e96"
+  version "2025.10.11"
+  sha256 arm:   "d6ee3eb0a5e5dc4ea226dc2f4c72810e5e377bdba6ad7e291b491e692c8df28f",
+         intel: "1dd7fadcf584fa7c9831f21c610f6c6035717db9ed9aa76d2ee8b683f5c1b8da"
 
-  url "https://github.com/vrcx-team/VRCX/releases/download/v#{version}/VRCX_#{version.no_dots}_#{arch}.dmg"
+  url "https://github.com/vrcx-team/VRCX/releases/download/v#{version}/VRCX_#{version}_#{arch}.dmg"
   name "VRCX"
   desc "Friendship management tool for VRChat"
   homepage "https://github.com/vrcx-team/VRCX"
