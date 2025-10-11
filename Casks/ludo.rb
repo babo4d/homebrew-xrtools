@@ -13,6 +13,8 @@ cask "ludo" do
     regex(%r{href=.*?/Ludo[._-]OSX[._-]x86_64[._-]v?(\d+(?:\.\d+)+)\.dmg}i)
   end
 
+  depends_on macos: ">= :monterey"
+
   app "Ludo.app"
 
   zap trash: "~/Library/Application Support/ludo"
