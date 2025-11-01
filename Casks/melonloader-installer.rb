@@ -1,8 +1,8 @@
 cask "melonloader-installer" do
-  version "4.2.0"
-  sha256 "48f5f6ed65be86e6716bba084c1276d8594bf306537bb9eec8064a5b348662fe"
+  version "4.2.1"
+  sha256 "04cbbc9188b23b2ce2ba5d5ddc0fae59411714c5bdc34c7d0a8e3eff16303991"
 
-  url "https://github.com/LavaGang/MelonLoader.Installer/releases/download/#{version}/MelonLoader.Installer.MacOS.x64.zip"
+  url "https://github.com/LavaGang/MelonLoader.Installer/releases/download/#{version}/MelonLoader.Installer.MacOS.zip"
   name "MelonLoader Installer"
   desc "Universal Mod Loader for Unity Games"
   homepage "https://github.com/LavaGang/MelonLoader.Installer"
@@ -12,22 +12,19 @@ cask "melonloader-installer" do
     strategy :github_latest
   end
 
+  # App artifact fails audit due to missing executable permissions
   # app "MelonLoader Installer.app"
-  # Temporary, app artifact fails audit due to missing executable permissions
+  # Temporary workaround: generic artifact
   artifact "MelonLoader Installer.app", target: "/Applications/MelonLoader Installer.app"
 
   preflight do
     # Fix executable permissions
     # https://github.com/LavaGang/MelonLoader.Installer/issues/66
-    FileUtils.chmod "+x", "#{staged_path}/MelonLoader Installer.app/MelonLoader.Installer.MacOS"
+    FileUtils.chmod "+x", "#{staged_path}/MelonLoader Installer.app/Contents/MacOS/MelonLoader.Installer.MacOS"
   end
 
   zap trash: [
     "~/Library/Application Support/MelonLoader Installer",
     "~/Library/Preferences/com.lavagang.melonloader.installer.plist",
   ]
-
-  caveats do
-    requires_rosetta
-  end
 end
