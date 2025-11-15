@@ -1,6 +1,6 @@
 cask "duckstation" do
-  version "0.1-9903"
-  sha256 "ee056920d6a37d14432d8050310050b4110ba2cbd13a24334c46b6cd96ed2b8e"
+  version "0.1-10091"
+  sha256 "e9ba7792c2376b7158b8684feb2efb0314d1d57397ca3981b903675b053d668a"
 
   url "https://github.com/stenzek/duckstation/releases/download/v#{version}/duckstation-mac-release.zip",
       verified: "github.com/stenzek/duckstation/"
