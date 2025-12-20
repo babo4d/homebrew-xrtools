@@ -2,9 +2,9 @@ cask "rpcs3" do
   file_suffix = on_arch_conditional arm: "macos_arm64", intel: "macos"
   folder_suffix = on_arch_conditional arm: "mac-arm64", intel: "mac"
 
-  version "0.0.38-18185,9e49b9100fab7293c5f616f6aebc91799461c26c"
-  sha256 arm:   "7ba5f7a2c09602dfddf5e3958bf9dea40889f6391403aa67a43429ae6e48eb30",
-         intel: "a8338d4b0f80454411f160193895441dc5a356b0487ae57f7f547f2b700c3451"
+  version "0.0.38-18540,f946054a3781b2ca1aa6c82a21d7ab169cee7823"
+  sha256 arm:   "47f6826931623311fd637794c372d173b1d7c0f11814310a2c8e7299f14bfce6",
+         intel: "9e2e73df4dbe37d8c4abea4a77e44ca20a48a500fa25a5abd590e09e952dc84a"
 
   url "https://github.com/RPCS3/rpcs3-binaries-#{folder_suffix}/releases/download/build-#{version.csv.second}/rpcs3-v#{version.csv.first}-#{version.csv.second[0..7]}_#{file_suffix}.7z",
       verified: "github.com/RPCS3/rpcs3-binaries-#{folder_suffix}/"
@@ -21,6 +21,8 @@ cask "rpcs3" do
       end
     end
   end
+
+  depends_on macos: ">= :sonoma"
 
   app "RPCS3.app"
 
