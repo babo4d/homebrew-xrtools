@@ -1,6 +1,6 @@
 cask "eden" do
-  version "0.0.4-rc2"
-  sha256 "2d5aab7df6ec22988330e85909c4f9f370018574ab22d392253ef10b0787a795"
+  version "0.0.4-rc3"
+  sha256 "2d860ef722eebdd181905682c07de0b1c572aea9f47f182b9d6fcf626e3d7260"
 
   url "https://github.com/eden-emulator/Releases/releases/download/v#{version}/Eden-macOS-v#{version}.tar.gz",
       verified: "github.com/eden-emulator/"
