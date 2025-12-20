@@ -1,9 +1,9 @@
 cask "vrcx" do
   arch arm: "arm64", intel: "x64"
 
-  version "2025.11.16"
-  sha256 arm:   "9977dfd4c61ae46d0c510d758c8fc95afb676486b93934f7e97a4594701dc78c",
-         intel: "987ba31064eeca955455cce4b29a5724d8d616c0d45b53d74b6e3e4d3643aed4"
+  version "2025.12.06"
+  sha256 arm:   "751d4a9f15f5178a52e209645bd7e886466961e43d5488beec6d2dae62f27093",
+         intel: "d81336c17838fe7112b62cf07c2cba0cb90fe1867ca48591de9772d7ee08a715"
 
   url "https://github.com/vrcx-team/VRCX/releases/download/v#{version}/VRCX_#{version}_#{arch}.dmg"
   name "VRCX"
@@ -14,6 +14,8 @@ cask "vrcx" do
     url :url
     strategy :github_latest
   end
+
+  depends_on macos: ">= :monterey"
 
   app "VRCX.app"
 
