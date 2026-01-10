@@ -1,12 +1,11 @@
 cask "rpcs3" do
-  file_suffix = on_arch_conditional arm: "macos_arm64", intel: "macos"
   folder_suffix = on_arch_conditional arm: "mac-arm64", intel: "mac"
 
-  version "0.0.38-18540,f946054a3781b2ca1aa6c82a21d7ab169cee7823"
-  sha256 arm:   "47f6826931623311fd637794c372d173b1d7c0f11814310a2c8e7299f14bfce6",
-         intel: "9e2e73df4dbe37d8c4abea4a77e44ca20a48a500fa25a5abd590e09e952dc84a"
+  version "0.0.39-18648,49bcc930727ced0ea935155f8ef8bf4a4ce4e6e1"
+  sha256 arm:   "A44D0C26B27D7F10C81DA4BBD19195C8B23AA6C13173B4A66EA1A8EEC59716A3",
+         intel: "BDCD6AD8A655C9715915E74379BEC55C6BB38A3E3041B33C7A9A306B1C9ABB77"
 
-  url "https://github.com/RPCS3/rpcs3-binaries-#{folder_suffix}/releases/download/build-#{version.csv.second}/rpcs3-v#{version.csv.first}-#{version.csv.second[0..7]}_#{file_suffix}.7z",
+  url "https://github.com/RPCS3/rpcs3-binaries-#{folder_suffix}/releases/download/build-#{version.csv.second}/rpcs3-v#{version.csv.first}-#{version.csv.second[0..7]}_macos.7z",
       verified: "github.com/RPCS3/rpcs3-binaries-#{folder_suffix}/"
   name "RPCS3"
   desc "PS3 emulator"
