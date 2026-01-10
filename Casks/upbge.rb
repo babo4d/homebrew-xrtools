@@ -1,11 +1,8 @@
 cask "upbge" do
-  arch arm: "arm", intel: "x86_64"
+  version "0.50"
+  sha256 "4e505caf861a2408bdbdd54c8a6e35a2dcba7005aa44b0d75589fa7c45bdb18a"
 
-  version "0.44"
-  sha256 arm:   "996b726adef16c4ff6b8b3740cc82872abdf3bfee46efbecc7ea56651c119c9f",
-         intel: "3cc1b4ab2e531715cfae479d89f620feb3ef9c583538dc6ddaf331ac35889eca"
-
-  url "https://github.com/UPBGE/upbge/releases/download/v#{version}/upbge-#{version}-macos-#{arch}.dmg",
+  url "https://github.com/UPBGE/upbge/releases/download/v#{version}/upbge-#{version}-macos-arm64.dmg",
       verified: "github.com/UPBGE/upbge/"
   name "UPBGE"
   desc "Uchronia Project Blender Game Engine"
@@ -15,6 +12,8 @@ cask "upbge" do
     url :url
     strategy :github_releases
   end
+
+  depends_on macos: ">= :big_sur"
 
   # Rename to avoid conflict with blender
   app "Blender.app", target: "UPBGE.app"
