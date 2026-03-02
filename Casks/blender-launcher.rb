@@ -1,6 +1,6 @@
 cask "blender-launcher" do
-  version "2.5.3"
-  sha256 "06162edc6f9c03feb3ff5e692520d8c086a6805562ec60e1412838b1461cf189"
+  version "2.6.1"
+  sha256 "ca07aecbfbaacb852971a67843099b42daeb85790c4af4f12337223c364142f3"
 
   url "https://github.com/Victor-IX/Blender-Launcher-V2/releases/download/v#{version}/Blender_Launcher_v#{version}_macos_arm64.zip"
   name "Blender Launcher"
