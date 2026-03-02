@@ -8,11 +8,6 @@ cask "citron" do
   desc "Advanced Nintendo Switch Emulator"
   homepage "https://citron-emu.org/"
 
-  livecheck do
-    url "https://git.citron-emu.org/Citron/Emulator.git"
-    strategy :git
-  end
-
   disable! date: "2026-02-26", because: :no_longer_available
 
   app "citron.app"
