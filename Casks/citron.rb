@@ -13,6 +13,8 @@ cask "citron" do
     strategy :git
   end
 
+  disable! date: "2026-02-26", because: :no_longer_available
+
   app "citron.app"
 
   zap trash: "~/Library/Preferences/com.citron-emu.citron.plist"
