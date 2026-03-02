@@ -1,17 +1,17 @@
 cask "openra-tiberiandawn-hd" do
-  version "20250330,-v4,release"
-  sha256 "b5b3c97bfbfc9eba3caf75c5e2ddc26048351f438c03f03056f2ec2ded83f793"
+  version "20260222,playtest"
+  sha256 "6777fe3f2cf5972a8e67d51b262d54c130cd638b20e1655f6556eb657a098d2e"
 
-  url "https://github.com/OpenRA/TiberianDawnHD/releases/download/#{version.csv.third}-#{version.csv.first}#{version.csv.second}/TiberianDawnHD-#{version.csv.third}-#{version.csv.first}.dmg"
+  url "https://github.com/OpenRA/TiberianDawnHD/releases/download/#{version.csv.second}-#{version.csv.first}/TiberianDawnHD-#{version.csv.second}-#{version.csv.first.sub(/-\w+/, "")}.dmg"
   name "OpenRA - Tiberian Dawn HD"
   desc "OpenRA TD with remastered assets"
   homepage "https://github.com/OpenRA/TiberianDawnHD"
 
   livecheck do
     url :url
-    regex(/^(\w+)-(\d+)(-\w*)$/i)
+    regex(/^(\w+)-(\d+[-\w]*)$/i)
     strategy :github_latest do |json, regex|
-      json["tag_name"]&.scan(regex)&.map { |match| "#{match[1]},#{match[2]},#{match[0]}" }
+      json["tag_name"]&.scan(regex)&.map { |match| "#{match[1]},#{match[0]}" }
     end
   end
 
