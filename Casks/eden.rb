@@ -1,17 +1,16 @@
 cask "eden" do
-  version "0.2.0-rc1"
-  sha256 "c1fec63d61d9346eb69e3bc63fcd1610b879df1f9ef492e83cd9e27aa081f654"
+  version "0.2.0-rc2"
+  sha256 "6987944af48380667c716a55b237620872d8402c98acd8f84346d278d87331cb"
 
-  url "https://github.com/eden-emulator/Releases/releases/download/v#{version}/Eden-macOS-v#{version}.tar.gz",
-      verified: "github.com/eden-emulator/"
+  url "https://git.eden-emu.dev/eden-emu/eden/releases/download/v#{version}/Eden-macOS-v#{version}.tar.gz"
   name "Eden Emulator"
   desc "Nintendo Switch emulator"
   homepage "https://eden-emu.dev/"
 
   livecheck do
-    url "https://github.com/eden-emulator/Releases"
+    url "https://git.eden-emu.dev/eden-emu/eden.git"
     regex(/v?(\d+(?:\.\d+)+[-\w]*)/i)
-    strategy :github_latest
+    strategy :git
   end
 
   app "eden.app"
