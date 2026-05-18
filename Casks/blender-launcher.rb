@@ -7,7 +7,7 @@ cask "blender-launcher" do
   desc "Standalone client for managing official builds of Blender 3D"
   homepage "https://github.com/Victor-IX/Blender-Launcher-V2"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "Blender Launcher.app"
 
