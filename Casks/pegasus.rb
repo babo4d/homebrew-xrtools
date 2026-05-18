@@ -18,6 +18,8 @@ cask "pegasus" do
     end
   end
 
+  depends_on :macos
+
   app "Pegasus.app"
 
   zap trash: [
