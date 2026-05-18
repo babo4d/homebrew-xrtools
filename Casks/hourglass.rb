@@ -12,6 +12,8 @@ cask "hourglass" do
     url "https://gitlab.com/jwestman/hourglass.git"
   end
 
+  depends_on :macos
+
   app "Hourglass.app"
 
   zap trash: [
