@@ -9,6 +9,8 @@ cask "tiny-vcc" do
 
   deprecate! date: "2024-03-31", because: :discontinued
 
+  depends_on :macos
+
   app "Tiny VCC.app"
 
   zap trash: [
