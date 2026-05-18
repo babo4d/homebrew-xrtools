@@ -22,7 +22,7 @@ cask "rpcs3" do
     end
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "RPCS3.app"
 
