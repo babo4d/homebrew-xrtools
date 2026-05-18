@@ -1,11 +1,13 @@
 cask "godots" do
-  version "1.4.stable"
-  sha256 "1e1282ad0bce1796196ab60100d0c1ab78e02b9aaa64a10bb3263df67860390f"
+  version "1.4.1.stable"
+  sha256 "336a56dbf1a59ca88c21b00affbfa068162ef2453efdb7c822f40837440092a2"
 
   url "https://github.com/MakovWait/godots/releases/download/v#{version}/macOS.zip"
   name "Godots"
   desc "Hub for managing your Godot versions and projects"
   homepage "https://github.com/MakovWait/godots"
+
+  depends_on macos: :big_sur
 
   app "Godots.app"
 
