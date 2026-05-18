@@ -13,7 +13,7 @@ cask "shadps4qtlauncher" do
     strategy :git
   end
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "shadPS4QtLauncher.app"
 
