@@ -13,7 +13,7 @@ cask "shadps4" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "shadps4.app"
 
