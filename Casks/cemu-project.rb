@@ -8,7 +8,7 @@ cask "cemu-project" do
   desc "Wii U emulator"
   homepage "https://cemu.info/"
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Cemu.app"
 
