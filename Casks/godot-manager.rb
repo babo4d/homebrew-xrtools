@@ -7,6 +7,8 @@ cask "godot-manager" do
   desc "Project, Version and Addons/Plugins manager for Godot Game Engine"
   homepage "https://github.com/eumario/godot-manager"
 
+  depends_on :macos
+
   app "Godot Manager.app"
 
   zap trash: [
