@@ -13,6 +13,8 @@ cask "openra-combined-arms" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   app "OpenRA - Combined Arms.app"
 
   zap trash: [

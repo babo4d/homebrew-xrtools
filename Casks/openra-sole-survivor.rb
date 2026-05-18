@@ -15,6 +15,8 @@ cask "openra-sole-survivor" do
     end
   end
 
+  depends_on :macos
+
   app "OpenRA - Sole Survivor.app"
 
   zap trash: [

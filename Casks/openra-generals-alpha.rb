@@ -16,6 +16,8 @@ cask "openra-generals-alpha" do
     end
   end
 
+  depends_on :macos
+
   app "OpenRA - Generals Alpha.app"
 
   zap trash: [

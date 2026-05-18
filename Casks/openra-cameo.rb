@@ -16,6 +16,8 @@ cask "openra-cameo" do
     end
   end
 
+  depends_on :macos
+
   app "OpenRA - Cameo Mod.app"
 
   zap trash: [

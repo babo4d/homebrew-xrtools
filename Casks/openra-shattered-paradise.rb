@@ -16,6 +16,8 @@ cask "openra-shattered-paradise" do
     end
   end
 
+  depends_on :macos
+
   app "OpenRA - Shattered Paradise.app"
 
   zap trash: [

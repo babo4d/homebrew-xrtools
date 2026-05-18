@@ -14,6 +14,8 @@ cask "openra-ymca" do
     regex(/^v?(\w+(?:[.-]v?\d+)*)$/i)
   end
 
+  depends_on :macos
+
   app "OpenRA - You Must Contruct Additional....app", target: "OpenRA - YMCA.app"
 
   zap trash: [

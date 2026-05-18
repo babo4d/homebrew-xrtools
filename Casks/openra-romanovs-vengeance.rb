@@ -16,6 +16,8 @@ cask "openra-romanovs-vengeance" do
     end
   end
 
+  depends_on :macos
+
   app "OpenRA - Romanovs Vengeance.app"
 
   zap trash: [

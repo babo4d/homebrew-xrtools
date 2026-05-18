@@ -15,6 +15,8 @@ cask "openra-tiberiandawn-hd" do
     end
   end
 
+  depends_on :macos
+
   app "OpenRA - Tiberian Dawn HD.app"
 
   zap trash: [
