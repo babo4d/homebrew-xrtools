@@ -1,25 +1,24 @@
 cask "ludo" do
-  version "0.17.1"
-  sha256 "7eb0e5d0b7bbc87408481230c15922848da750bbf97b8f696c0ac1a38ff4aa57"
+  arch arm: "arm64", intel: "x86_64"
 
-  url "https://github.com/libretro/ludo/releases/download/v#{version}/Ludo-OSX-x86_64-#{version}.dmg",
+  version "0.22.5"
+  sha256 arm:   "eb052ef61b1c0a2d9a3323555dc93ca21ed5026234f4156a330c25a6e9e6d41f",
+         intel: "d142086d4bd26202449aa60f1da83c393288798c3fcc8411e3e22095897b374b"
+
+  url "https://github.com/libretro/ludo/releases/download/v#{version}/Ludo-OSX-#{arch}-#{version}.dmg",
       verified: "github.com/libretro/ludo/"
   name "Ludo"
   desc "Minimalist frontend for emulators"
   homepage "https://ludo.libretro.com/"
 
   livecheck do
-    url :homepage
-    regex(%r{href=.*?/Ludo[._-]OSX[._-]x86_64[._-]v?(\d+(?:\.\d+)+)\.dmg}i)
+    url :url
+    strategy :github_latest
   end
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :sequoia
 
   app "Ludo.app"
 
   zap trash: "~/Library/Application Support/ludo"
-
-  caveats do
-    requires_rosetta
-  end
 end
