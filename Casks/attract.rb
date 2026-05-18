@@ -13,6 +13,8 @@ cask "attract" do
     regex(%r{href=.*?/attract[._-]v?(\d+(?:\.\d+)+)\.dmg}i)
   end
 
+  depends_on :macos
+
   app "Attract.app"
 
   zap trash: [
