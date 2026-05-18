@@ -1,6 +1,6 @@
 cask "azahar" do
-  version "2125.0.1"
-  sha256 "6fb944597cedb865be5dd0ac6d217b4e7137c27006668258dbe3a83297ae27af"
+  version "2125.1.2"
+  sha256 "e6e0e51ce100165ea9b82fe171887a7a7819fc282b1ccb8c9e976f62b5c8e30b"
 
   url "https://github.com/azahar-emu/azahar/releases/download/#{version}/azahar-macos-universal-#{version}.zip",
       verified: "github.com/azahar-emu/azahar/"
@@ -8,7 +8,7 @@ cask "azahar" do
   desc "Nintendo 3DS emulator"
   homepage "https://azahar-emu.org/"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "azahar-macos-universal-#{version}/Azahar.app"
 
