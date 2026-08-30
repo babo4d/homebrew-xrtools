@@ -1,6 +1,6 @@
 cask "godots" do
-  version "1.4.1.stable"
-  sha256 "336a56dbf1a59ca88c21b00affbfa068162ef2453efdb7c822f40837440092a2"
+  version "1.4.2.stable"
+  sha256 "b11e0fd005625257f984c55a8d6a98ad6bccab5882da0b23b3aab67541f0a47e"
 
   url "https://github.com/MakovWait/godots/releases/download/v#{version}/macOS.zip"
   name "Godots"
