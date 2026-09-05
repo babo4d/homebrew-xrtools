@@ -1,6 +1,6 @@
 cask "godothub" do
-  version "1.3.9"
-  sha256 "85848005a199b33e3514c637fc8e6f76fd5c6e9240cd3c046c5d8a40a88e15ea"
+  version "1.4.1"
+  sha256 "0cc7ec21133d46620e1f4090f9fa079a8b930868556296afc811885b72878b76"
 
   url "https://github.com/RykoTheDev/GodotHub/releases/download/v#{version}/GodotHub_#{version}_universal.dmg"
   name "GodotHub"
