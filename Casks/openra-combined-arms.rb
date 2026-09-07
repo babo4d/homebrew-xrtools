@@ -2,8 +2,7 @@ cask "openra-combined-arms" do
   version "1.09"
   sha256 "d47a42488e48cf0d673b94b7b789d854d4245362f058fc6e353a606d4cfb6922"
 
-  url "https://github.com/Inq8/CAmod/releases/download/#{version}/CombinedArms-#{version}.dmg",
-      verified: "github.com/Inq8/CAmod/"
+  url "https://github.com/Inq8/CAmod/releases/download/#{version}/CombinedArms-#{version}.dmg"
   name "OpenRA - Combined Arms"
   desc "OpenRA mod combining content from various C&C games"
   homepage "https://www.moddb.com/mods/command-conquer-combined-arms"

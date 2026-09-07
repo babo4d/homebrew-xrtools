@@ -2,8 +2,7 @@ cask "upbge" do
   version "0.50"
   sha256 "4e505caf861a2408bdbdd54c8a6e35a2dcba7005aa44b0d75589fa7c45bdb18a"
 
-  url "https://github.com/UPBGE/upbge/releases/download/v#{version}/upbge-#{version}-macos-arm64.dmg",
-      verified: "github.com/UPBGE/upbge/"
+  url "https://github.com/UPBGE/upbge/releases/download/v#{version}/upbge-#{version}-macos-arm64.dmg"
   name "UPBGE"
   desc "Uchronia Project Blender Game Engine"
   homepage "https://upbge.org/"

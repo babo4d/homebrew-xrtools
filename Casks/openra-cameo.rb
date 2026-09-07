@@ -2,8 +2,7 @@ cask "openra-cameo" do
   version "20250505,playtest"
   sha256 "db06e279c25c7c5eff9d103747d2f715b9ed62c3e19feea38442f3e06313e965"
 
-  url "https://github.com/Zeruel87/Cameo-mod/releases/download/#{version.csv.second}-#{version.csv.first}/CameoMod-#{version.csv.second}-#{version.csv.first}.dmg",
-      verified: "github.com/Zeruel87/Cameo-mod/"
+  url "https://github.com/Zeruel87/Cameo-mod/releases/download/#{version.csv.second}-#{version.csv.first}/CameoMod-#{version.csv.second}-#{version.csv.first}.dmg"
   name "OpenRA - Cameo Mod"
   desc "OpenRA mod bringing together many factions from different universes"
   homepage "https://www.moddb.com/mods/cameo"

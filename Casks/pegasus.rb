@@ -2,8 +2,7 @@ cask "pegasus" do
   version "alpha16-82-gc3462e68,weekly_2024w38"
   sha256 "87e33d23fdf92684b096530281a99eebfdf2243b47046f83381f06c62e430fcf"
 
-  url "https://github.com/mmatyas/pegasus-frontend/releases/download/#{version.csv.second}/pegasus-fe_#{version.csv.first}_macos-static.zip",
-      verified: "github.com/mmatyas/pegasus-frontend/"
+  url "https://github.com/mmatyas/pegasus-frontend/releases/download/#{version.csv.second}/pegasus-fe_#{version.csv.first}_macos-static.zip"
   name "Pegasus"
   desc "Graphical frontend for launching emulators and managing your game collection"
   homepage "https://pegasus-frontend.org/"

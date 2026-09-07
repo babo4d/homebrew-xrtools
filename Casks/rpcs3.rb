@@ -6,8 +6,7 @@ cask "rpcs3" do
   sha256 arm:   "fe90eafa8ca745f6bed8f4aa7aaaf3c31c27f2d2516c83b47ae3dd580b33667e",
          intel: "a71c70c6687b352f494658a5fed522d24507e51ad21da2bffdb919ca0db69350"
 
-  url "https://github.com/RPCS3/rpcs3-binaries-#{folder_suffix}/releases/download/build-#{version.csv.second}/rpcs3-v#{version.csv.first}-#{version.csv.second[0..7]}_#{file_suffix}.7z",
-      verified: "github.com/RPCS3/"
+  url "https://github.com/RPCS3/rpcs3-binaries-#{folder_suffix}/releases/download/build-#{version.csv.second}/rpcs3-v#{version.csv.first}-#{version.csv.second[0..7]}_#{file_suffix}.7z"
   name "RPCS3"
   desc "PS3 emulator"
   homepage "https://rpcs3.net/"

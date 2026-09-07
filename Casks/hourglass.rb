@@ -2,8 +2,7 @@ cask "hourglass" do
   version "0.9.4"
   sha256 :no_check
 
-  url "https://jwestman.gitlab.io/hourglass/hourglass-macos.zip",
-      verified: "jwestman.gitlab.io"
+  url "https://jwestman.gitlab.io/hourglass/hourglass-macos.zip"
   name "Hourglass"
   desc "Project manager for Godot Engine"
   homepage "https://hourglass.jwestman.net/"

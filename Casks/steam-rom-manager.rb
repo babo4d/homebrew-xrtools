@@ -2,8 +2,7 @@ cask "steam-rom-manager" do
   version "2.5.34"
   sha256 "fd929377ce9d9324375e9207293f963e198a2d2f4b46851658c963ca10b57911"
 
-  url "https://github.com/SteamGridDB/steam-rom-manager/releases/download/v#{version}/Steam-ROM-Manager-#{version}.dmg",
-      verified: "github.com/SteamGridDB/steam-rom-manager/"
+  url "https://github.com/SteamGridDB/steam-rom-manager/releases/download/v#{version}/Steam-ROM-Manager-#{version}.dmg"
   name "Steam ROM Manager"
   desc "Tool for adding non-Steam games to Steam in bulk"
   homepage "https://steamgriddb.github.io/steam-rom-manager/"

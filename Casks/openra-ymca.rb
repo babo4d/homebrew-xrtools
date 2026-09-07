@@ -2,8 +2,7 @@ cask "openra-ymca" do
   version "0.96.13"
   sha256 "eba68d2ac3a891ab2c87ec3f044e5c23f788204a6f9f98093774256a3532ec65"
 
-  url "https://github.com/patrickwieth/YMCA/releases/download/v#{version}/YouMustConstructAdditional-v#{version}.dmg",
-      verified: "github.com/patrickwieth/YMCA/"
+  url "https://github.com/patrickwieth/YMCA/releases/download/v#{version}/YouMustConstructAdditional-v#{version}.dmg"
   name "OpenRA - You Must Construct Additional..."
   desc "You Must Construct Additional... OpenRA RTS Autobattler"
   homepage "https://www.moddb.com/mods/you-must-construct-additional1"
