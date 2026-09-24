@@ -7,7 +7,7 @@ cask "godot-version-manager" do
   desc "Download, Install and Manage any version of Godot Engine"
   homepage "https://github.com/noidexe/godot-version-manager"
 
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "Godot Version Manager.app"
 

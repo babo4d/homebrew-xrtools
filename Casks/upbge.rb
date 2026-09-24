@@ -12,7 +12,7 @@ cask "upbge" do
     strategy :github_latest
   end
 
-  depends_on macos: :big_sur
+  depends_on :macos
 
   # Rename to avoid conflict with blender
   app "Blender.app", target: "UPBGE.app"

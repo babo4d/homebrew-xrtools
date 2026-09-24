@@ -7,7 +7,7 @@ cask "godots" do
   desc "Hub for managing your Godot versions and projects"
   homepage "https://github.com/MakovWait/godots"
 
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "Godots.app"
 
