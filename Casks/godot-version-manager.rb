@@ -1,6 +1,6 @@
 cask "godot-version-manager" do
-  version "1.17.3"
-  sha256 "64adf651554281cb1990803f8cc2e1ade9d90a012803dc2c19f96901b04973d6"
+  version "1.18"
+  sha256 "f7d8870b2cc5b71dd0a1becd065e9ce2161c0011c307b0fb91c972d31ed1d19d"
 
   url "https://github.com/noidexe/godot-version-manager/releases/download/v#{version}/Godot.Version.Manager.v#{version}-osx.zip"
   name "Godot Version Manager"
