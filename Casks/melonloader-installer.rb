@@ -1,6 +1,6 @@
 cask "melonloader-installer" do
-  version "4.3.0"
-  sha256 "0b3bd7b3573f9074327d136dd9db82c4d3eddfe6739d215fb61975a49602c186"
+  version "4.4.0"
+  sha256 "0ffccc635d03d16278c3b0f677031dfa62f3f04b37831ca8e87decd481ab9f7c"
 
   url "https://github.com/LavaGang/MelonLoader.Installer/releases/download/#{version}/MelonLoader.Installer.MacOS.dmg"
   name "MelonLoader Installer"
