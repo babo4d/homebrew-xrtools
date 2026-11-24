@@ -1,9 +1,9 @@
 cask "vrcx-0" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "2.30.0"
-  sha256 arm:   "4636de4acb908bf22e1dab5dd83c79240e56fddc652110b171e513943ce8fc6b",
-         intel: "9121d678ac90a6c11131e04bebb0a1f4920a076e66187d437ee22bd75e3ec569"
+  version "2.35.0"
+  sha256 arm:   "f9ce8bda9022ff2186a771f54857ea15200cc2efd1d3f340cbdc840a6c7fade3",
+         intel: "488c05f631ba7a0d2362f257efcac8b7b75ee5dbd9fff2048f3f44566ac7286a"
 
   url "https://github.com/Map1en/VRCX-0/releases/download/v#{version}/VRCX-0_#{version}_macos_#{arch}.dmg"
   name "VRCX-0"
