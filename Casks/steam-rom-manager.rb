@@ -1,13 +1,13 @@
 cask "steam-rom-manager" do
-  version "2.5.34"
-  sha256 "fd929377ce9d9324375e9207293f963e198a2d2f4b46851658c963ca10b57911"
+  version "2.6.3"
+  sha256 "6634a4803a1b685a99ea8d877e7e0822534dc82d957c768fe2ff40ee4e382c3a"
 
   url "https://github.com/SteamGridDB/steam-rom-manager/releases/download/v#{version}/Steam-ROM-Manager-#{version}.dmg"
   name "Steam ROM Manager"
   desc "Tool for adding non-Steam games to Steam in bulk"
   homepage "https://steamgriddb.github.io/steam-rom-manager/"
 
-  depends_on :macos
+  depends_on macos: :ventura
 
   app "Steam ROM Manager.app"
 
